@@ -3,73 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations</title>
+    <title>Travel Blog — Destinations</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Header: same on all pages. "active" class on current page link -->
     <header class="header">
         <h1>Travel Blog</h1>
-        <nav aria-label="Main Navigation" role="navigation">
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destination-highlights">Destinations</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html" class="active">Destinations</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <!-- Page hero banner — dark background, no image needed -->
+    <section class="page-hero">
         <h1>Destinations</h1>
-        <p>Explore our curated list of travel destinations around the world, each offering unique experiences and unforgettable memories.</p>
-        <section>
-            <h2>Featured Destinations</h2>
-            <article>
-                
+        <p>Explore our curated list of travel destinations, each offering unique experiences and unforgettable memories.</p>
+    </section>
+
+    <main>
+        <div class="section-wrapper">
+
+            <!-- Cape Coast article -->
+            <article class="destination-article">
                 <h3>Cape Coast, Ghana</h3>
                 <div class="image-gallery">
-                    <img src="https://media.istockphoto.com/id/490266163/photo/cape-coast-castle-gun-battery.jpg?s=612x612&w=0&k=20&c=jJb2lzfRxgAnBCJvZsVAkmnFXp6amOQqOEWGowZnIg4=" alt="Cape Coast img 1">
-                    <img src="https://media.istockphoto.com/id/1005323200/photo/rope-bridges-of-the-canopy-walk-at-the-kakum-national-park-near-cape-coast-ghana.jpg?s=612x612&w=0&k=20&c=Pw5TmDnxH87xpRHjE8kUNGdoU5YB3zbdgGP1AsSn6GU=" alt="Cape Coast img 2">
-                    <img src="https://media.istockphoto.com/id/1005323818/photo/women-are-selecting-the-oil-palm-fruits-for-further-processing-at-a-palm-oil-factory-near.jpg?s=612x612&w=0&k=20&c=4o1j7zX6_wIkMJPjIl10qdembGKL97fUt4GQ6VS4yJA=" alt="Cape Coast img 3">
-                    <img src="https://media.istockphoto.com/id/491895871/photo/busua-fisherman-village-in-ghana-africa.jpg?s=612x612&w=0&k=20&c=6XJDRdBK251BE8LXptADAPn5tT_r4IuMaFPgCGGq3aQ=" alt="Cape Coast img 4">
-                    <img src="https://media.istockphoto.com/id/1417614514/photo/local-african-bright-car-in-cape-coast-town-near-the-market.jpg?s=612x612&w=0&k=20&c=efqcU03ADbv0trJor9ghDkKmWYxaXmLsrWkfvvyUBNU=" alt="Cape Coast img 5">
+                    <img src="https://media.istockphoto.com/id/490266163/photo/cape-coast-castle-gun-battery.jpg?s=612x612&w=0&k=20&c=jJb2lzfRxgAnBCJvZsVAkmnFXp6amOQqOEWGowZnIg4=" alt="Cape Coast Castle gun battery">
+                    <img src="https://media.istockphoto.com/id/1005323200/photo/rope-bridges-of-the-canopy-walk-at-the-kakum-national-park-near-cape-coast-ghana.jpg?s=612x612&w=0&k=20&c=Pw5TmDnxH87xpRHjE8kUNGdoU5YB3zbdgGP1AsSn6GU=" alt="Kakum canopy walk">
+                    <img src="https://media.istockphoto.com/id/1005323818/photo/women-are-selecting-the-oil-palm-fruits-for-further-processing-at-a-palm-oil-factory-near.jpg?s=612x612&w=0&k=20&c=4o1j7zX6_wIkMJPjIl10qdembGKL97fUt4GQ6VS4yJA=" alt="Palm oil processing near Cape Coast">
+                    <img src="https://media.istockphoto.com/id/491895871/photo/busua-fisherman-village-in-ghana-africa.jpg?s=612x612&w=0&k=20&c=6XJDRdBK251BE8LXptADAPn5tT_r4IuMaFPgCGGq3aQ=" alt="Busua fishing village">
+                    <img src="https://media.istockphoto.com/id/1417614514/photo/local-african-bright-car-in-cape-coast-town-near-the-market.jpg?s=612x612&w=0&k=20&c=efqcU03ADbv0trJor9ghDkKmWYxaXmLsrWkfvvyUBNU=" alt="Colourful car near Cape Coast market">
                 </div>
-                <p>Explore the rich history and cultural heritage of Cape Coast.</p>
+                <p>Explore the rich history and cultural heritage of Cape Coast — home to the famous Cape Coast Castle and Kakum National Park's breathtaking canopy walk.</p>
             </article>
-            <article>
+
+            <!-- Accra article -->
+            <article class="destination-article">
                 <h3>Accra, Ghana</h3>
                 <div class="image-gallery">
-                    <img src="https://media.istockphoto.com/id/453437701/photo/independence-arch.jpg?s=612x612&w=0&k=20&c=CtpbTkKetsy8PHBu5-CvzlEahD2gpFpKn_Y_5YBT52A=" alt="Accra img 1">
-                    <img src="https://media.istockphoto.com/id/991077738/photo/kwame-nkrumah-memorial-park-and-fountains.jpg?s=612x612&w=0&k=20&c=z7KGsJeQaeefQ3S0xTG2cZ4OHz2PytAXPGmChOLSI0w=" alt="Accra img 2">
-                    <img src="https://media.istockphoto.com/id/1451750787/photo/bird-eye-view-of-city-centre-in-accra-ghana.jpg?s=612x612&w=0&k=20&c=6nNJXRmGeQF4csjd2Qk0pgDk-9QYVCMdn44yQqUIFGU=" alt="Accra img 3">
-                    <img src="https://media.istockphoto.com/id/2223218073/photo/ghana-aerial-of-tema-interchange-at-night.jpg?s=612x612&w=0&k=20&c=lY5bXUDOiMSrWX8rds7BXf44g9CtYrSXxQ7pxwgdzgw=" alt="Accra img 4">
-                    <img src="https://media.istockphoto.com/id/520042407/photo/empty-beach-cafe-in-ghana.jpg?s=612x612&w=0&k=20&c=0_dYFPrLC1p8nnZA5T4-7xKiv9efTBG7yAZrUspe828=" alt="Accra img 5">
+                    <img src="https://media.istockphoto.com/id/453437701/photo/independence-arch.jpg?s=612x612&w=0&k=20&c=CtpbTkKetsy8PHBu5-CvzlEahD2gpFpKn_Y_5YBT52A=" alt="Independence Arch, Accra">
+                    <img src="https://media.istockphoto.com/id/991077738/photo/kwame-nkrumah-memorial-park-and-fountains.jpg?s=612x612&w=0&k=20&c=z7KGsJeQaeefQ3S0xTG2cZ4OHz2PytAXPGmChOLSI0w=" alt="Kwame Nkrumah Memorial Park">
+                    <img src="https://media.istockphoto.com/id/1451750787/photo/bird-eye-view-of-city-centre-in-accra-ghana.jpg?s=612x612&w=0&k=20&c=6nNJXRmGeQF4csjd2Qk0pgDk-9QYVCMdn44yQqUIFGU=" alt="Aerial view of Accra city centre">
+                    <img src="https://media.istockphoto.com/id/2223218073/photo/ghana-aerial-of-tema-interchange-at-night.jpg?s=612x612&w=0&k=20&c=lY5bXUDOiMSrWX8rds7BXf44g9CtYrSXxQ7pxwgdzgw=" alt="Tema interchange at night">
+                    <img src="https://media.istockphoto.com/id/520042407/photo/empty-beach-cafe-in-ghana.jpg?s=612x612&w=0&k=20&c=0_dYFPrLC1p8nnZA5T4-7xKiv9efTBG7yAZrUspe828=" alt="Beach café in Ghana">
                 </div>
-                <p>Experience the vibrant culture and bustling city life of Accra.</p>
+                <p>Experience the vibrant culture and bustling city life of Accra — Ghana's capital blends modern energy with deep historical roots, from the Independence Arch to its lively beach scenes.</p>
             </article>
-            <article>
+
+            <!-- Kumasi article -->
+            <article class="destination-article">
                 <h3>Kumasi, Ghana</h3>
                 <div class="image-gallery">
-                    <img src="https://media.istockphoto.com/id/1417595301/photo/intersection-at-adum-kumasi-with-cathedral.jpg?s=612x612&w=0&k=20&c=XTaCq6qlwLlqarLQsFPRqYyIzAL59owbrrIF0yNcnKs=" alt="Kumasi img 1">
-                    <img src="https://media.istockphoto.com/id/1413273048/photo/traditional-view-of-the-city-center-of-african-kumasi.jpg?s=612x612&w=0&k=20&c=386EPssMA-xDVr3IDK4P_O8XspQpjgMQLMZcwWRRlPc=" alt="Kumasi img 2">
-                    <img src="https://media.istockphoto.com/id/492061819/photo/fisherman-at-the-lake-bosumtwi-ghana.jpg?s=612x612&w=0&k=20&c=AEESSWbSN5icWuaWFK_fWD-XvIx_SkG_7kuqNcgpC6M=" alt="Kumasi img 3">
-                    <img src="https://media.istockphoto.com/id/1173578024/photo/ghana-sandstone-landscape.jpg?s=612x612&w=0&k=20&c=w83q7Tdw6hH2dtq5SOEYRwhcqnEIRQNawKeRGIeBrpw=" alt="Kumasi img 4">
-                    <img src="https://media.istockphoto.com/id/1164196319/photo/impressive-natural-stone-arches-around-techiman-ghana.jpg?s=612x612&w=0&k=20&c=xy5mby-fwG7LV_4qFdu9rxGi-LN-CeoHvVPrviwhjOk=" alt="Kumasi img 5">
+                    <img src="https://media.istockphoto.com/id/1417595301/photo/intersection-at-adum-kumasi-with-cathedral.jpg?s=612x612&w=0&k=20&c=XTaCq6qlwLlqarLQsFPRqYyIzAL59owbrrIF0yNcnKs=" alt="Adum intersection with cathedral, Kumasi">
+                    <img src="https://media.istockphoto.com/id/1413273048/photo/traditional-view-of-the-city-center-of-african-kumasi.jpg?s=612x612&w=0&k=20&c=386EPssMA-xDVr3IDK4P_O8XspQpjgMQLMZcwWRRlPc=" alt="Kumasi city centre">
+                    <img src="https://media.istockphoto.com/id/492061819/photo/fisherman-at-the-lake-bosumtwi-ghana.jpg?s=612x612&w=0&k=20&c=AEESSWbSN5icWuaWFK_fWD-XvIx_SkG_7kuqNcgpC6M=" alt="Fisherman at Lake Bosumtwi">
+                    <img src="https://media.istockphoto.com/id/1173578024/photo/ghana-sandstone-landscape.jpg?s=612x612&w=0&k=20&c=w83q7Tdw6hH2dtq5SOEYRwhcqnEIRQNawKeRGIeBrpw=" alt="Ghana sandstone landscape">
+                    <img src="https://media.istockphoto.com/id/1164196319/photo/impressive-natural-stone-arches-around-techiman-ghana.jpg?s=612x612&w=0&k=20&c=xy5mby-fwG7LV_4qFdu9rxGi-LN-CeoHvVPrviwhjOk=" alt="Natural stone arches near Techiman">
                 </div>
-                <p>Discover the rich culture and history of Kumasi, the capital city of the Ashanti Region.</p>
+                <p>Discover the rich culture and history of Kumasi — the Ashanti regional capital is home to the Manhyia Palace, Lake Bosumtwi, and one of West Africa's largest markets.</p>
             </article>
-            <br><br>
-    </main>
-    <footer class="footer">
-        <div id="contact">
-            <p>&copy; 2024 Travel Blog. All rights reserved.</p>
-            <a href="contact.html">Contact Us</a>
-            <ul>
-                <li>Email: <a href="mailto:travelblog@gmail.com">travelblog@gmail.com</a></li>
-                <li>Phone: +233 24 123 4567</li>
-                <li>Address: Accra, Ghana</li>
-            </ul>
-        </div>
 
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div>
+            <p>&copy; 2026 Travel Blog. All rights reserved.</p>
+            <p>Sharing Ghana's beauty with the world.</p>
+        </div>
+        <ul class="footer-links">
+            <li>Email: <a href="mailto:travelblog@gmail.com">travelblog@gmail.com</a></li>
+            <li>Phone: +233 24 123 4567</li>
+            <li>Address: Accra, Ghana</li>
+        </ul>
     </footer>
-    
+
 </body>
 </html>
