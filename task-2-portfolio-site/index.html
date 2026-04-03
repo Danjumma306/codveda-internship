@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Osman | Health-Tech Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="universe">
+        <div class="blob-teal"></div>
+        <div class="blob-purple"></div>
+        <div class="blob-blue"></div>
+
+        <header class="glass">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home" class="section-wrapper">
+            <div class="glass-card hero-content">
+                <div class="profile-container">
+                    <img src="img/my-profile.PNG" alt="Mohammed Osman" class="profile-img">
+                </div>
+                <h1>Hi, I'm Mohammed Osman</h1>
+                <p class="tagline">Computer Science Student @ Palm University | Building the future of Health-Tech through Software & AI.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="skills" class="section-wrapper">
+            <div class="glass-card">
+                <h2>Frontend Development</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                        <span>React</span>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                        <span>CSS3</span>
+                    </div>
+                    
+                </div>
+                <p class="skill-instruction">Click anywhere to explore more skills!</p>
+            </div>
+        </section>
+
+        <section id="projects" class="section-wrapper">
+            <h2 class="section-title">Selected Works</h2>
+<div class="projects-carousel" role="region" aria-label="Featured projects carousel">
+                <div class="carousel-track">
+                    <div class="glass project-card" role="group" aria-label="Project 1 of 4">
+                        <img src="img/campus-style.png" alt="Campus Style Site" class="project-image">
+                        <h3>Campus Style</h3>
+                        <p>A web application for a braiding shop on campus with WhatsApp integrated booking.</p>
+                        <a href="https://campus-style1.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                    </div>
+
+                    <div class="glass project-card" role="group" aria-label="Project 2 of 4">
+                        <img src="img/visitrack.png" alt="VisiTrack System" class="project-image">
+                        <h3>VisiTrack</h3>
+                        <p>A visitor tracking system for hostels, managing arrival and departure logistics.</p>
+                        <a href="https://visitrack-nexus.lovable.app" target="_blank" rel="noopener noreferrer" class="project-link">Live Demo</a>
+                    </div>
+
+                    <div class="glass project-card coming-soon" role="group" aria-label="Project 3 of 4">
+                        <img src="img/content-genie.png" alt="Content Genie" class="project-image">
+                        <h3>Content Genie</h3>
+                        <p>An AI-powered SaaS tool for multi-platform content generation.</p>
+                        <span class="badge">Coming Soon</span>
+                    </div>
+
+                    <div class="glass project-card" role="group" aria-label="Project 4 of 4">
+                        <img src="img/virtual-board.png" alt="Virtual Board" class="project-image">
+                        <h3>Virtual Whiteboard</h3>
+                        <p>A gesture-controlled whiteboard using Python, OpenCV, and MediaPipe.</p>
+                    </div>
+                </div>
+
+                <div class="carousel-nav">
+                    <button class="nav-btn prev" aria-label="Previous project">
+                        ‹
+                    </button>
+                    <button class="nav-btn next" aria-label="Next project">
+                        ›
+                    </button>
+                </div>
+
+                <div class="carousel-indicators" aria-hidden="true">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section id="contact" class="section-wrapper">
+            <div class="glass-card">
+                <h2>Let's Connect</h2>
+                <div class="contact-info">
+                    <a href="mailto:danjumma306@gmail.com">Email</a>
+                    <a href="https://linkedin.com/in/mohammedosman-" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <a href="https://github.com/Danjumma306" target="_blank" rel="noopener noreferrer">GitHub</a>
+                </div>
+                <form action="https://formspree.io/f/xqegqpra" method="POST">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can I help?" required></textarea>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Mohammed Osman. All rights reserved.</p>
+        </footer>
+    </div>   
+    <script src="script.js"></script> 
+</body>
+</html>
