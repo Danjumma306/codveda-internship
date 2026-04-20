@@ -5,9 +5,11 @@ function App() {
   const [weather, setWeather] = useState(null);
   const [city, setCity] = useState("");
 
+
   const fetchWeather = async () => {
     
-    const API_KEY = "***REMOVED***"; 
+    const API_KEY = import.meta.env.VITE_OPEN_WEATHER_API_KEY;
+
     
     try {
       const response = await fetch(
