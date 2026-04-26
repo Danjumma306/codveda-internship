@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Activity, Trash2, UserPlus, ClipboardList } from 'lucide-react';
+import { Activity, Trash2, UserPlus, ClipboardList, Stethoscope, LogOut } from 'lucide-react';
 import './App.css';
 
 // The bridge to your Node.js server
@@ -128,30 +128,60 @@ function App() {
     <div id="universe">
       <header className="glass-nav">
         <h2><Activity size={24} /> MediLog Clinical Portal</h2>
-        {isLoggedIn && <button className="logout-btn" onClick={handleLogout}>Logout</button>}
+        {isLoggedIn && (
+          <button className="logout-btn" onClick={handleLogout}>
+            <LogOut size={18} /> Logout
+          </button>
+        )}
       </header>
 
-{!isLoggedIn ? (
+      {!isLoggedIn ? (
         <section className="login-screen">
-          {/* Dynamically change title */}
-          <h2>{isRegistering ? "📝 Clinical Registration" : "🔒 Clinical Login"}</h2>
-          
-          {/* Dynamically change which function runs on submit */}
-          <form onSubmit={isRegistering ? handleRegister : handleLogin}>
-            <input type="email" placeholder="Doctor Email" value={email} onChange={(e)=>setEmail(e.target.value)} required />
-            <input type="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} required />
+          <div className="auth-card">
+            <div className="auth-header">
+              <div className="auth-icon">
+                <Stethoscope size={32} />
+              </div>
+              <h2>{isRegistering ? "Clinical Registration" : "Clinical Login"}</h2>
+              <p className="auth-subtitle">
+                {isRegistering ? "Create your medical portal account" : "Secure access to patient records"}
+              </p>
+            </div>
             
-            {/* Dynamically change button text */}
-            <button type="submit">{isRegistering ? "Create Account" : "Access Records"}</button>
-          </form>
+            <form className="auth-form" onSubmit={isRegistering ? handleRegister : handleLogin}>
+              <div className="input-group">
+                <label>Email Address</label>
+                <input 
+                  type="email" 
+                  placeholder="doctor@hospital.com" 
+                  value={email} 
+                  onChange={(e)=>setEmail(e.target.value)} 
+                  required 
+                />
+              </div>
+              <div className="input-group">
+                <label>Password</label>
+                <input 
+                  type="password" 
+                  placeholder="Enter your password" 
+                  value={password} 
+                  onChange={(e)=>setPassword(e.target.value)} 
+                  required 
+                />
+              </div>
+              
+              <button type="submit" className="auth-btn">
+                {isRegistering ? "Create Account" : "Access Records"}
+              </button>
+            </form>
 
-          {/* The Toggle Button */}
-          <p 
-            style={{ marginTop: '15px', color: '#0369a1', cursor: 'pointer', textAlign: 'center', fontWeight: 'bold' }} 
-            onClick={() => setIsRegistering(!isRegistering)}
-          >
-            {isRegistering ? "Already have an account? Login here." : "Need an account? Register here."}
-          </p>
+            <button 
+              className="toggle-btn" 
+              onClick={() => setIsRegistering(!isRegistering)}
+            >
+              {isRegistering ? "Already have an account? Login here" : "Need an account? Register here"}
+            </button>
+          </div>
         </section>
       ) : (
 
