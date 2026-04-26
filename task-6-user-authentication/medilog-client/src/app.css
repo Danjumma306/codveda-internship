@@ -1,0 +1,168 @@
+/* Clean Clinical Theme */
+:root {
+  --med-blue: #0284c7;
+  --med-bg: #f8fafc;
+  --med-card: #ffffff;
+  --med-text: #0f172a;
+  --med-border: #e2e8f0;
+  --danger: #ef4444;
+}
+
+body {
+  background-color: var(--med-bg);
+  color: var(--med-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+#universe {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.glass-nav {
+  border-bottom: 2px solid var(--med-blue);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+.glass-nav h2 {
+  margin: 0;
+  color: var(--med-blue);
+  letter-spacing: -0.5px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 2rem;
+}
+
+/* Intake Form Section */
+.form-container {
+  background: var(--med-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--med-border);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.75rem;
+  border: 1px solid var(--med-border);
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: 2px solid var(--med-blue);
+  border-color: transparent;
+}
+
+.add-btn {
+  background: var(--med-blue);
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.add-btn:hover {
+  opacity: 0.9;
+}
+
+/* Patient List Section */
+.list-container h3 {
+  margin-top: 0;
+  color: var(--med-text);
+}
+
+.patient-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.patient-card {
+  background: var(--med-card);
+  padding: 1.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--med-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.patient-info h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.15rem;
+}
+
+.patient-info span {
+  color: var(--med-blue);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.patient-info p {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+}
+
+.delete-icon {
+  background: #fee2e2;
+  color: var(--danger);
+  border: none;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.delete-icon:hover {
+  background: #fecaca;
+}
+
+.status-badge {
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  display: block;
+}
+
+.status-blue {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.status-green {
+  background: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.status-badge:hover {
+  filter: brightness(0.9);
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
